@@ -18,83 +18,87 @@
 
   <body>
     <div class="container">
-      <div class="page-header">
-        <h1>IEC 招新报名表</h1>
-        <blockquote>最重要的不是你的技术，而是你对互联网的狂热！</blockquote>
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+          <div class="page-header">
+            <h1>IEC 招新报名表</h1>
+            <blockquote>最重要的不是你的技术，而是你对互联网的狂热！</blockquote>
+          </div>
+
+          <form role="form" method="post" action="">
+            <div class="form-group">
+              <label for="name">姓名：</label>
+              <input type="text" class="form-control" id="name" placeholder="输入姓名" required>
+            </div>
+
+            <div class="form-group">
+              <label for="gender">性别：</label>
+              <label class="radio-inline ">
+                <input type="radio" name="gender" id="male" value="male"> 男
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="gender" id="female" value="female"> 女
+              </label>
+            </div>
+
+            <div class="form-group">
+              <label for="studentid">学号：</label>
+              <input type="text" class="form-control" id="studentid" placeholder="输入学号" required>
+            </div>
+
+            <div class="form-group">
+              <label for="phone">手机：</label>
+              <input type="text" class="form-control" id="phone" placeholder="输入手机号" required>
+            </div>
+
+            <div class="form-group">
+              <label for="qq">QQ：</label>
+              <input type="text" class="form-control" id="qq" placeholder="输入 QQ 号" required>
+            </div>
+
+            <div class="form-group">
+              <label for="principle">做事原则：</label>
+              <textarea class="form-control" rows="3" id="principle" name="principle" placeholder="请一句话描述你的做事原则" required></textarea>
+            </div>
+
+            <div class="form-group">
+              <label for="qq">方向：</label>
+              <p class="help-block">没有基础的童鞋可以忽略，我们真正需要的是你对互联网的一片热情！</p>
+
+              <label class="checkbox-inline">
+                <input type="checkbox" value="Web Front-end">
+                Web Front-end
+              </label>
+              <label class="checkbox-inline">
+                <input type="checkbox" value="iOS">
+                iOS
+              </label>
+              <label class="checkbox-inline">
+                <input type="checkbox" value="Android">
+                Android
+              </label>
+              <label class="checkbox-inline">
+                <input type="checkbox" value="Microsoft">
+                Microsoft
+              </label>
+              <label class="checkbox-inline">
+                <input type="checkbox" value="UI/UX">
+                UI/UX
+              </label>
+              <label class="checkbox-inline">
+                <input type="checkbox" value="Server">
+                Server
+              </label>
+              <label class="checkbox-inline">
+                <input type="checkbox" value="Unknown">
+                其他
+              </label>
+            </div>
+
+            <button type="submit" class="btn btn-primary">提交</button>
+          </form>
+        </div>
       </div>
-
-      <form role="form" method="post" action="">
-        <div class="form-group">
-          <label for="name">姓名：</label>
-          <input type="text" class="form-control" id="name" placeholder="输入姓名" required>
-        </div>
-
-        <div class="form-group">
-          <label for="gender">性别：</label>
-          <label class="radio-inline ">
-            <input type="radio" name="gender" id="male" value="male"> 男
-          </label>
-          <label class="radio-inline">
-            <input type="radio" name="gender" id="female" value="female"> 女
-          </label>
-        </div>
-
-        <div class="form-group">
-          <label for="studentid">学号：</label>
-          <input type="text" class="form-control" id="studentid" placeholder="输入学号" required>
-        </div>
-
-        <div class="form-group">
-          <label for="phone">手机：</label>
-          <input type="text" class="form-control" id="phone" placeholder="输入手机号" required>
-        </div>
-
-        <div class="form-group">
-          <label for="qq">QQ：</label>
-          <input type="text" class="form-control" id="qq" placeholder="输入 QQ 号" required>
-        </div>
-
-        <div class="form-group">
-          <label for="principle">做事原则：</label>
-          <textarea class="form-control" rows="3" id="principle" name="principle" placeholder="请一句话描述你的做事原则" required></textarea>
-        </div>
-
-        <div class="form-group">
-          <label for="qq">方向：</label>
-          <p class="help-block">没有基础的童鞋可以忽略，我们真正需要的是你对互联网的一片热情！</p>
-
-          <label class="checkbox-inline">
-            <input type="checkbox" value="Web Front-end">
-            Web Front-end
-          </label>
-          <label class="checkbox-inline">
-            <input type="checkbox" value="iOS">
-            iOS
-          </label>
-          <label class="checkbox-inline">
-            <input type="checkbox" value="Android">
-            Android
-          </label>
-          <label class="checkbox-inline">
-            <input type="checkbox" value="Microsoft">
-            Microsoft
-          </label>
-          <label class="checkbox-inline">
-            <input type="checkbox" value="UI/UX">
-            UI/UX
-          </label>
-          <label class="checkbox-inline">
-            <input type="checkbox" value="Server">
-            Server
-          </label>
-          <label class="checkbox-inline">
-            <input type="checkbox" value="Unknown">
-            其他
-          </label>
-        </div>
-
-        <button type="submit" class="btn btn-primary">提交</button>
-      </form>
     </div>
 
     <script src="./js/jQuery1.11.1.js"></script>
