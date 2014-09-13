@@ -23,34 +23,74 @@
         <blockquote>最重要的不是你的技术，而是你对互联网的狂热！</blockquote>
       </div>
 
-      <form method="post" class="simple_form new_talent">
-        <label for="name">姓 名:</label>
-        <input type="text" id="name" required/>
-        <br></br>
-        <label class="checkbox inline">性别：
-          <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>男
-          <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2" checked>女
-        </label>
-        <label for="number">学 号:</label>
-        <input type="text" id="number" required/>
-        <br></br>
-        <label for="phoneNumber">手机号:</label>
-        <input type="text" id="phoneNumber" required/>
-        <br></br>
-        <label for="qq">QQ:</label>
-        <input type="text" id="qq" required/>
-        <br></br>
-        <textarea rows="3" placeholder="请一句话描述你的做事原则" id="principle" required></textarea>
-        <p>方 向：</p>
-        <blockquote>没有基础的童鞋可以忽略，我们真正需要的是你对互联网的一片热情！</blockquote>
-        <input type="checkbox" id="direction" value="Web Front-end"/>Web Front-end
-        <input type="checkbox" id="direction" value="iOS"/>iOS
-        <input type="checkbox" id="direction" value="Android"/>Android
-        <input type="checkbox" id="direction" value="Microsoft"/>Microsoft
-        <input type="checkbox" id="direction" value="UI Design"/>UI Design
-        <input type="checkbox" id="direction" value="Sever"/>Sever
-        <input type="checkbox" id="direction" value="Unknown"/>其他
-        <br></br>
+      <form role="form" method="post" action="">
+        <div class="form-group">
+          <label for="name">姓名：</label>
+          <input type="text" class="form-control" id="name" placeholder="输入姓名" required>
+        </div>
+
+        <div class="form-group">
+          <label for="gender">性别：</label>
+          <label class="radio-inline">
+            <input type="radio" name="gender" id="male" value="male"> 男
+          </label>
+          <label class="radio-inline">
+            <input type="radio" name="gender" id="female" value="female"> 女
+          </label>
+        </div>
+
+
+        <div class="form-group">
+          <label for="studentid">学号：</label>
+          <input type="text" class="form-control" id="studentid" placeholder="输入学号" required>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">手机：</label>
+          <input type="text" class="form-control" id="phone" placeholder="输入手机号" required>
+        </div>
+
+        <div class="form-group">
+          <label for="qq">QQ：</label>
+          <input type="text" class="form-control" id="qq" placeholder="输入QQ号" required>
+        </div>
+
+        <textarea class="form-control" rows="3" name="principle" placeholder="请一句话描述你的做事原则" required></textarea>
+
+        <div>
+          <p class="lead">方向：</p>
+          <blockquote>没有基础的童鞋可以忽略，我们真正需要的是你对互联网的一片热情！</blockquote>
+
+          <label class="checkbox-inline">
+            <input type="checkbox" value="Web Front-end">
+            Web Front-end
+          </label>
+          <label class="checkbox-inline">
+            <input type="checkbox" value="iOS">
+            iOS
+          </label>
+          <label class="checkbox-inline">
+            <input type="checkbox" value="Android">
+            Android
+          </label>
+          <label class="checkbox-inline">
+            <input type="checkbox" value="Microsoft">
+            Microsoft
+          </label>
+          <label class="checkbox-inline">
+            <input type="checkbox" value="UI/UX">
+            UI/UX
+          </label>
+          <label class="checkbox-inline">
+            <input type="checkbox" value="Server">
+            Server
+          </label>
+          <label class="checkbox-inline">
+            <input type="checkbox" value="Unknown">
+            其他
+          </label>
+        </div>
+
         <button type="submit" class="btn btn-primary">提交</button>
       </form>
     </div>
