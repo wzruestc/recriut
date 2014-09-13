@@ -28,7 +28,7 @@
           <form role="form" method="post" action="">
             <div class="form-group">
               <label for="name">姓名：</label>
-              <input type="text" class="form-control" id="name" placeholder="输入姓名" required>
+              <input type="text" class="form-control" id="name" name="name" placeholder="输入姓名" required>
             </div>
 
             <div class="form-group">
@@ -43,17 +43,17 @@
 
             <div class="form-group">
               <label for="studentid">学号：</label>
-              <input type="text" class="form-control" id="studentid" placeholder="输入学号" required>
+              <input type="text" class="form-control" id="studentid" name="studentid" placeholder="输入学号" required>
             </div>
 
             <div class="form-group">
               <label for="phone">手机：</label>
-              <input type="text" class="form-control" id="phone" placeholder="输入手机号" required>
+              <input type="text" class="form-control" id="phone" name="phone" placeholder="输入手机号" required>
             </div>
 
             <div class="form-group">
               <label for="qq">QQ：</label>
-              <input type="text" class="form-control" id="qq" placeholder="输入 QQ 号" required>
+              <input type="text" class="form-control" id="qq" name="qq" placeholder="输入 QQ 号" required>
             </div>
 
             <div class="form-group">
@@ -66,31 +66,31 @@
               <p class="help-block">没有基础的童鞋可以忽略，我们真正需要的是你对互联网的一片热情！</p>
 
               <label class="checkbox-inline">
-                <input type="checkbox" value="Web Front-end">
+                <input type="checkbox" name="purposes[]" value="Web Front-end">
                 Web Front-end
               </label>
               <label class="checkbox-inline">
-                <input type="checkbox" value="iOS">
+                <input type="checkbox" name="purposes[]" value="iOS">
                 iOS
               </label>
               <label class="checkbox-inline">
-                <input type="checkbox" value="Android">
+                <input type="checkbox" name="purposes[]" value="Android">
                 Android
               </label>
               <label class="checkbox-inline">
-                <input type="checkbox" value="Microsoft">
+                <input type="checkbox" name="purposes[]" value="Microsoft">
                 Microsoft
               </label>
               <label class="checkbox-inline">
-                <input type="checkbox" value="UI/UX">
+                <input type="checkbox" name="purposes[]" value="UI/UX">
                 UI/UX
               </label>
               <label class="checkbox-inline">
-                <input type="checkbox" value="Server">
+                <input type="checkbox" name="purposes[]" value="Server">
                 Server
               </label>
               <label class="checkbox-inline">
-                <input type="checkbox" value="Unknown">
+                <input type="checkbox" name="purposes[]" value="Unknown">
                 其他
               </label>
             </div>
