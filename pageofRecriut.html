@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>IEC招新报名表</title>
+    <link href="./css/bootstrap.min.css" rel="stylesheet" type="text/css">
+</head>
+<style type="text/css">
+	textarea{
+		width: 25em;
+	}
+</style>>
+<script src="./js/jQuery1.11.1.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+<body>
+<div class="container">
+	<h1>IEC招新报名表</h1>
+	<blockquote>最重要的不是你的技术，而是你对互联网的狂热！</blockquote>
+	<form method="post" class="simple_form new_talent">
+		<label for="name">姓 名:</label>
+		<input type="text" id="name" required/>
+		<br></br>
+		<label class="checkbox inline">性别：
+			<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>男
+			<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2" checked>女
+		</label>
+		<label for="number">学 号:</label>
+		<input type="text" id="number" required/>
+		<br></br>
+		<label for="phoneNumber">手机号:</label>
+		<input type="text" id="phoneNumber" required/>
+		<br></br>
+		<label for="qq">QQ:</label>
+		<input type="text" id="qq" required/>
+		<br></br>
+		<textarea rows="3" placeholder="请一句话描述你的做事原则" id="principle" required></textarea>
+		<p>方 向：</p>
+		<blockquote>没有基础的童鞋可以忽略，我们真正需要的是你对互联网的一片热情！</blockquote>
+		<input type="checkbox" id="direction" value="Web Front-end"/>Web Front-end
+		<input type="checkbox" id="direction" value="iOS"/>iOS
+		<input type="checkbox" id="direction" value="Android"/>Android
+		<input type="checkbox" id="direction" value="Microsoft"/>Microsoft
+		<input type="checkbox" id="direction" value="UI Design"/>UI Design
+		<input type="checkbox" id="direction" value="Sever"/>Sever
+		<input type="checkbox" id="direction" value="Unknown"/>其他
+		<br></br>
+		<button type="submit" class="btn btn-primary">提交</button>
+	</form>
+</div>
+</body>
+</html>
+
+
+ 
