@@ -31,14 +31,13 @@
 
         <div class="form-group">
           <label for="gender">性别：</label>
-          <label class="radio-inline">
+          <label class="radio-inline ">
             <input type="radio" name="gender" id="male" value="male"> 男
           </label>
           <label class="radio-inline">
             <input type="radio" name="gender" id="female" value="female"> 女
           </label>
         </div>
-
 
         <div class="form-group">
           <label for="studentid">学号：</label>
@@ -52,14 +51,17 @@
 
         <div class="form-group">
           <label for="qq">QQ：</label>
-          <input type="text" class="form-control" id="qq" placeholder="输入QQ号" required>
+          <input type="text" class="form-control" id="qq" placeholder="输入 QQ 号" required>
         </div>
 
-        <textarea class="form-control" rows="3" name="principle" placeholder="请一句话描述你的做事原则" required></textarea>
+        <div class="form-group">
+          <label for="principle">做事原则：</label>
+          <textarea class="form-control" rows="3" id="principle" name="principle" placeholder="请一句话描述你的做事原则" required></textarea>
+        </div>
 
-        <div>
-          <p class="lead">方向：</p>
-          <blockquote>没有基础的童鞋可以忽略，我们真正需要的是你对互联网的一片热情！</blockquote>
+        <div class="form-group">
+          <label for="qq">方向：</label>
+          <p class="help-block">没有基础的童鞋可以忽略，我们真正需要的是你对互联网的一片热情！</p>
 
           <label class="checkbox-inline">
             <input type="checkbox" value="Web Front-end">
